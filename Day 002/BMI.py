@@ -3,4 +3,4 @@ weight = float(input("your weight?(K 80)\n"))
 
 bmi = weight / height**2
 
-print(f"height = {height}\nweight = {weight}\n\n\nyour BMI is {bmi}")
+print(f"height = {height}\nweight = {weight}\n\n\nyour BMI is {round(bmi, 2)}")
