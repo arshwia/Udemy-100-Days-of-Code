@@ -16,7 +16,7 @@ if size == "S":
     if extra_cheese == "Y":
         price = price + 1
 
-    print(f"your pizza price : {price}")
+    print(f"your pizza price : ${price}")
 
 elif size == "M":
     price = price + 20
@@ -29,7 +29,7 @@ elif size == "M":
     if extra_cheese == "Y":
         price = price + 1
 
-    print(f"your pizza price : {price}")
+    print(f"your pizza price : ${price}")
 
 elif size == "L":
     price = price + 25
@@ -42,4 +42,4 @@ elif size == "L":
     if extra_cheese == "Y":
         price = price + 1
 
-    print(f"your pizza price : {price}")
+    print(f"your pizza price : ${price}")
