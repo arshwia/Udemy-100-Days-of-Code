@@ -26,6 +26,7 @@ data = {
 
 
 def win_or_lose(user_choice, pc_choice):
+    # error handling
     if user_choice not in data:
         print("Invalid choice.")
         exit()
