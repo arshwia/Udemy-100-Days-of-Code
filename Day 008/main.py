@@ -36,8 +36,8 @@ def encode(msg, shift_number):
             encoded += " "
             continue
 
-        for index, l in enumerate(valid_characters):
-            if letter == l:
+        for index, _ in enumerate(valid_characters):
+            if letter == _:
                 new_index = (index + shift_number) % 26
                 encoded += valid_characters[new_index]
 
