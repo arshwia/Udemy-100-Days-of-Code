@@ -36,8 +36,8 @@ def encode(msg, shift_number):
             encoded += " "
             continue
 
-        for index, _ in enumerate(valid_characters):
-            if letter == _:
+        for index, char in enumerate(valid_characters):
+            if letter == char:
                 new_index = (index + shift_number) % 26
                 encoded += valid_characters[new_index]
 
@@ -45,8 +45,20 @@ def encode(msg, shift_number):
 
 
 def decode(msg, shift_number):
-    """بعداً کامل می‌شود."""
-    pass
+    decoded = ""
+
+    for letter in msg:
+        if letter == " ":
+            decoded += " "
+            continue
+
+        for index, char in enumerate(valid_characters):
+            if letter == char:
+                new_index = (index - shift_number) % 26
+                decoded += valid_characters[new_index]
+                break
+
+    return decoded
 
 
 def main(encode_or_decode, msg, shift_number):
